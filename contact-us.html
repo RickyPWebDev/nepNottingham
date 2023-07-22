@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div class="top-banner">
+        <div class="picture-links">
+        <img class="facebook" src="images/facebook.jpeg" alt="facebook image link"> 
+        <a href="https://www.linkedin.com/company/nep-midlands-ltd/" target="_blank"><img class="linkin" src="images/linkedin.png" alt="linkedin image link"> </a>
+        <a href="https://twitter.com/nepmidlandsltd?lang=en-GB" target="_blank"><img class="twitter"  src="images/twitter.png" alt="twitter image link"> </a>
+        </div>
+        <p class="number">0115 986 955</p>
+    </div>
+
+    <div class="heading">
+
+        <img class="nep" src="images/nep.jpeg" alt="nep logo">
+        
+        <p class="opening-hours">
+            Opening hours <br>
+            Monday: 8:30-5:00 (Closed on Bank Holidays) <br>
+            Tuesday: 8:30-5:00 <br>
+            Wednesday: 8:30-5:00 <br>
+            Thursday: 08:30-5:00 <br>
+            Friday: 08:30 - 5:00 
+    
+        </p>
+    
+
+
+        <div class="nav">
+        <nav>
+          <ul>
+           <a href="index.html"> <li>HOME </li> </a>
+           <a href="products.html"> <li>PRODUCTS </li> </a>
+           <a href="contact-us.html"> <li>CONTACT US </li> </a>
+           <a href="about-us.html"> <li>ABOUT US </li> </a>
+          </ul>
+        </nav>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="call">Call us today on 0115 986 955 <br>
+                         Email: sales@nepltd.co.uk.</h1>
+    </div>
+        <p class="or">Or</p>
+    <div class="message">
+        <h1>Send us a message using the form below:</h1>
+
+    </div>
+
+    <div id="panel"></div>
+    <!-- To make it email we need to put inside the form element
+      "sales@nepltd.co.uk."-->
+  
+    <div class="form-container">
+        <form onsubmit="return false">
+            <H3>Contact us</H3>
+             <input type="text" id="name" placeholder="Enter your name" >
+             <input type="email" id="email" placeholder="Email id" >
+             <input type="text" id="phone" placeholder="phone no." >
+             <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+             <button id="myBtn" type="submit" onClick="init(),scrollFunction(),topFunction()">Submit</button>
+        </form>
+
+
+
+    </div>
+    
+   
+    <script src="scripts/form.js"></script>
+</body>
+
+
+</html>

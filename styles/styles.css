@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height:1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ html {
+    max-width: 100%;
+ }
+a {
+    text-decoration: none;
+}
+.picture-links{
+    margin-right:10%;
+
+}
+
+.opening-hours {
+    margin-left:10%;
+    line-height:1;
+}
+
+.facebook {
+    float:right;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius:5px;
+}
+
+.linkin {
+    float:right;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius:5px;
+}
+
+.twitter {
+    float:right;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius:5px;
+}
+
+.top-banner {
+background-color:black;
+height:50px;
+}
+
+.number {
+    color:white;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+
+/* This styles the navigation bar */
+ .nav {
+    margin-top: 30px;
+    width:100%;
+    height:40px;
+    text-align: left;
+    background-color: #007aff;
+
+}
+
+ul, li {
+    display: inline-block;
+    text-align:right;
+    color:white;
+    margin-left:50px;
+    font-size:2.0rem;
+}
+
+
+/* This style rules sets the grid */
+.container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top:50px;
+    margin-left:50px;
+}
+/*Styling for grid item-1 */
+
+.item-1 {
+    grid-column-end: span 1;
+}
+.address {
+    color:#f52f2fcc;
+    font-size:2em;
+    margin-bottom:20px;
+}
+
+p {
+    font-size:1.5em;
+}
+
+.heading-1 {
+    font-size:3rem;
+    color:#f52f2fcc;
+}
+
+.warehouse {
+    width:500px;
+    margin-top: 10%;
+    border-radius:20px;
+}
+
+.item-2 {
+    padding-left:50px;
+    grid-row-end: span 1;
+
+}
+
+.btn {
+
+    background-color:#007aff;
+    color:white;
+    box-shadow: 2px 5px black;
+    margin-top:30px;
+    border-radius:5px;
+    font-size:2.5rem;
+    margin-right:auto;
+    padding:10px;
+    
+}
+
+
+.btn:hover {
+    cursor: pointer;
+}
+.btn:active {
+    box-shadow:none;
+}
+
+.showcase-products {
+    width: 500px;
+    border-radius: 20px;
+    margin-top:15%;
+    height:320px;
+}
+
+
+footer  {
+    margin-top:20%;
+}
+
+.nep-1 {
+    font-size:1rem;
+    text-align:center;
+    margin-left:70%;
+}
+
+.imgs {
+    width:250px;
+    height:250px;
+}
+
+
+/* products page styling */
+.products-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    
+}
+
+.products-img {
+    margin-top:20%;
+  
+}
+
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    margin-left:10%;
+    padding:10%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: #007aff;
+    color: white;
+    transform: rotateY(180deg);
+    margin-top:10%;
+  }
+  
+.call {
+    text-align:center;
+}
+
+.or {
+    text-align:center;
+}
+.message {
+    text-align:center;
+}
+
+
+form {
+    text-align:center;
+}
+
+.legend {
+    font-size:1.5rem;
+}
+
+
+#panel {
+    margin-top:5%;
+    margin-bottom:5%;
+    text-align:center;
+    color:red;
+    font-size:2rem;
+}
+
+/* style rules for the customer form */
+
+.form-container {
+    width: 100%;
+    height: 100vh;
+    background: #007aff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background: #fff;
+    display:flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+
+form h3 {
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    border:0;
+    margin:10px 0;
+    padding: 20px;
+    outline:none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border:0;
+    outline:none;
+    cursor:pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+
+.privacy-policy {
+    text-align:center;
+    width:50%;
+    margin-left:25%;
+
+}
+
+
+.privacy {
+    color:black;
+    display:block;
+    text-decoration: dot;
+    text-align:center;
+}
+
+
+.about-use,h3 {
+    text-align:center;
+    margin-top:5%;
+}
+
+.content {
+    text-align:center;
+    width:50%;
+    padding-left:25%;
+}
+
+
+.location {
+    width:600px;
+    height:500px;
+    margin-top:5%;
+
+}
+
+
+
+/* Responsive design */
+@media only screen and (max-width: 900px) {
+    
+        .container {
+            display:grid;
+            grid-template-columns:1fr;
+            margin-top:50px;
+            margin-left:50px;
+        }
+
+
+        ul, li {
+            display: inline-block;
+            text-align:left;
+            color:white;
+            font-size:1rem;
+        }
+
+        .products-container {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+        }
+
+        .imgs {
+            width:150px;
+            height:150px;
+    
+        }
+
+        .flip-box {
+            background-color: transparent;
+            width: 150px;
+            height: 450px;
+            margin-left:10%;
+            padding:10%;
+            perspective: 1000px; /* Remove this if you don't want the 3D effect */
+          }
+
+          .flip-box-back {
+            background-color: #007aff;
+            color: white;
+            transform: rotateY(180deg);
+            margin-top:10%;
+            font-size:1rem;
+          }
+
+          .location {
+            width:300px;
+            height:250px;
+            margin-top:5%;
+            padding-right:10%;
+            float:left;
+        }
+
+        .warehouse {
+            width:350px;
+            height:300px;
+        }
+
+        .showcase-products {
+            width:350px;
+            height:300px;
+        }
+}
